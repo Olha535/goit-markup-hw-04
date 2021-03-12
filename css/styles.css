@@ -393,7 +393,7 @@ img {
 .clients {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-text-color);
@@ -403,23 +403,56 @@ img {
 .clients-list {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.box {
-  padding-top: 102px;
-  padding-bottom: 94px;
-}
-
-.clients-list-item {
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
 }
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+}
+.clients-svg {
+  fill: #afb1b8;
+}
+.clients-link:hover .clients-svg,
+.clients-link:focus .clients-svg {
+  fill: var(--accent-color);
+}
+.box {
+  padding-top: 102px;
+  padding-bottom: 94px;
+}
+
 /*================= And Clients ================*/
 
 /* =============== FUTTER ================= */
+
+.main-footer-box {
+  display: flex;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box-second {
+  display: flex;
+  flex-direction: column;
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+  padding-top: 12px;
+}
 
 .city {
   font-size: 14px;
@@ -443,7 +476,7 @@ img {
 
 .footer-black {
   background: #2f303a;
-  border: 1px solid #000000;
+  /*border: 1px solid #000000;*/
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -473,11 +506,54 @@ img {
   display: block;
 }
 
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 206px;
+  height: 44px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--color-white);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  color: var(--color-white);
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
 /* =============== AND FUTTER ============= */
 
 /* =============== Portfolio ============== */
 .content-btn {
-  border-radius: 4px;
   padding: 6px 22px;
   display: inline-block;
   min-width: 73px;
@@ -489,12 +565,15 @@ img {
   color: var(--accent-text-color);
   background-color: #f5f4fa;
   cursor: pointer;
+  border: 0px;
 }
 
 .content-btn:hover,
 .content-btn:focus {
   background-color: var(--accent-color);
   color: var(--color-white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .cards-list {
@@ -555,6 +634,12 @@ img {
 
 .cards-img {
   max-width: 100%;
+}
+
+.item:hover,
+.item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* =========== And Portfolio ============== */
