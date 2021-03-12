@@ -102,6 +102,9 @@ img {
 }
 
 .tel-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -121,10 +124,12 @@ img {
 }
 
 .info-img {
+  justify-content: center;
   align-items: center;
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .logo {
@@ -222,9 +227,6 @@ img {
   height: 20px;
   fill: #afb1b8;
 }
-/*.social-list-link {
-  color: #afb1b8;
-}*/
 
 .social-list {
   display: flex;
@@ -241,30 +243,10 @@ img {
   border-radius: 50%;
 }
 
-/*.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: #afb1b8;
-}*/
-
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--accent-color);
 }
-
-/*.social-list-icon:hover,
-.social-list-icon:focus {
-  background-color: var(--accent-color);
-  /*fill: #afb1b8;*/
-}
-
-/*.social-list-link:hover,
-.social-list-link:focus {
-  fill: var(--accent-color);
-}*/
-
-/*---- .navigation-link .link.current {
-  color: var(--accent-color);
-} ---*/
 
 /* ================ AND COMPONENTS ============== */
 
@@ -331,6 +313,25 @@ img {
 .styless {
   display: flex;
 }
+.features-svg {
+  width: 70px;
+  height: 70px;
+}
+
+.block-svg {
+  display: flex;
+
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
 
 /* =============== AND FEATURES ================= */
 
@@ -386,6 +387,37 @@ img {
 .block {
   padding-top: 47px;
 }
+
+/*================= Clients ================*/
+
+.clients {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--accent-text-color);
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  padding-top: 102px;
+  padding-bottom: 94px;
+}
+
+.clients-list-item {
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+/*================= And Clients ================*/
 
 /* =============== FUTTER ================= */
 
