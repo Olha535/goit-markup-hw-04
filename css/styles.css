@@ -114,22 +114,28 @@ img {
 
 .tel-list {
   display: block;
+
   /*----margin-left: 50px;----*/
+}
+
+.tel-link:hover .info-img,
+.tel-link:focus .info-img {
+  background-color: var(--color-white);
+  fill: var(--accent-color);
 }
 
 .tel-link:hover,
 .tel-link:focus {
-  background-color: var(--color-white);
   color: var(--accent-color);
 }
 
 .info-img {
   justify-content: center;
   align-items: center;
-  width: 16px;
-  height: 12px;
+  /*width: 16px;
+  height: 12px;*/
   margin-right: 10px;
-  fill: currentColor;
+  /*fill: currentColor;*/
 }
 
 .logo {
@@ -251,6 +257,11 @@ img {
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
   fill: var(--color-white);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* ================ AND COMPONENTS ============== */
