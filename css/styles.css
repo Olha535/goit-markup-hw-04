@@ -248,6 +248,11 @@ img {
   background-color: var(--accent-color);
 }
 
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--color-white);
+}
+
 /* ================ AND COMPONENTS ============== */
 
 /* =================== FEATURES ================= */
@@ -316,6 +321,7 @@ img {
 .features-svg {
   width: 70px;
   height: 70px;
+  /*background: #ffffff;*/
 }
 
 .block-svg {
@@ -366,7 +372,7 @@ img {
 
 .team-comando {
   padding-top: 94px;
-  padding-bottom: 34px;
+  padding-bottom: 86px;
 }
 
 /*----.comandos {
@@ -438,6 +444,7 @@ img {
 
 .main-footer-box {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-box {
@@ -449,9 +456,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 206px;
-  height: 80px;
   margin-left: 70px;
-  padding-top: 12px;
 }
 
 .city {
@@ -511,6 +516,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--color-white);
 }
 
